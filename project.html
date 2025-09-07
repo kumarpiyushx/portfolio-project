@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project in css</title>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon"href="logo.png">
+         
+        
+        <style>
+             body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sticky-navar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color:azure;
+            padding: 10px 20px;
+            z-index: 1000;
+            box-shadow:2px 2px 8px burlywood;
+           
+           
+        }
+
+        .name  {
+            color: blue;
+            font-size:20px;
+        
+            
+        }
+
+        .menu-btn {
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        #checkbox {
+            display: none;
+        }
+
+        .side-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 20px;
+            top: 70px;
+            background-color: azure;
+            display: none;
+            flex-direction: column;
+            
+        }
+
+        .side-menu ul li {
+            padding: 10px 20px;
+        }
+
+        .side-menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* Toggle menu when checkbox is checked */
+        #checkbox:checked + label + ul {
+            display: flex;
+        }
+
+        /* Responsive: Hide menu on large screens */
+        @media (min-width: 768px) {
+            .menu-btn {
+                display: none;
+            }
+
+            .side-menu ul {
+                position: static;
+                display: flex !important;
+                flex-direction: row;
+                border: none;
+                background: transparent;
+            }
+
+            .side-menu ul li {
+                padding: 0 15px;
+            }
+        }
+        .upper{
+            background-color: azure;
+        }
+
+        .heading h1{
+            color:blue;
+            text-align: center;
+            font-size: 4rem;
+            text-shadow: 2px 4px 8px blue;
+            
+            
+            
+            
+        }
+
+        
+        .paragraph{
+            color:blue;
+            font-size: 20px;
+            margin-left: 8rem;
+            margin-top: 8rem;
+        }
+        .second{
+            margin-top:2.5rem;
+             margin-left: 8rem;
+        }
+        .first-box{
+            display:flex;
+            
+        }
+        .bbb{
+            margin-top: 1rem;
+        }
+    
+        .card {
+              width:600px;
+              margin-left:6rem;
+              display: grid;
+              align-items: start;
+        }
+    
+        img{
+            width:100%;
+            border-radius: 5px;
+
+        }
+
+       
+        .icon{
+            margin-top:2.5rem ;
+            margin-left: 8rem;   
+            
+        }
+        #first{
+            opacity:0.6;
+        }
+        #first:hover{
+            opacity:0.8;
+        }
+        #second{
+             opacity:0.6;
+        }
+        #second:hover{
+            opacity:0.8;
+        }
+        #third{
+            opacity:0.6;
+        }
+        #third:hover{
+             opacity:0.8;
+        }
+        span{
+            color:blue;
+            font-size:30px;
+            margin-left: 8rem;
+
+        }
+        .container{
+            background-color:whitesmoke;
+            border-radius: 10px;
+             
+            
+        }
+        .card2{
+            width:300px;
+            margin-left: 30px;
+            margin-top:1rem ;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px burlywood;
+            justify-content: space-around;
+        }
+        .card2:hover{
+              box-shadow: 2px 5px 12px burlywood;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left:6rem ;
+            
+        }
+        span1{
+            color:blue;
+            font-size:30px;
+            margin-left: 8rem;
+            margin-top: 2rem;
+        }
+        h2{
+            color:blue;
+            text-align: center;
+            font-size:3rem;
+            margin-top: 3rem;
+        }
+        
+        .form-set{
+            width:600px;
+            margin-left:25rem;
+            margin-top:1rem ;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px burlywood;
+            justify-content: space-around;
+        }
+       
+           @media (max-width: 768px) {
+           .card {
+           grid-template-columns: 1fr;
+            padding: 1rem; 
+        }
+         
+
+        .card,.form-set {
+        width: 100%;
+        margin: 0;
+        }
+
+       .box,.btn,textarea {
+        width: 100%;
+        } 
+    } 
+
+        .abc{
+           
+            margin-top: 2rem;
+        }
+        .box{
+             width:605px;
+            height:40px;
+            border-radius: 10px;
+        }
+        
+        .abc:hover{
+        color:blue;
+        }
+
+        .btn{
+            background-color: blue;
+            width:600px;
+            height:40px;
+            margin-top: 1.5rem;
+            border-radius: 10px;
+            color:white;
+        }
+        .btn:hover{
+            background-color: red;
+            transition: 2s;
+        }
+
+        .footer{
+           background-color: #333;
+           padding: 20px 0; 
+           display:flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           margin-top: 4rem;
+        }
+
+        .social-icon a{
+            color:white;
+            text-decoration: none;
+        }
+
+        h3{
+            color:blueviolet;
+            font-size: 1.25rem;
+            
+        }
+
+        p1{
+            color:white;
+            
+        }
+        .card4{
+            width: 1200px;
+            border-top: 1px solid whitesmoke;
+            
+        }
+
+        h4{
+            text-align: center;
+            color:white;
+            
+        }
+
+            
+
+        
+        
+        </style>
+    </head>
+    <body>
+        <div class="sticky-navar">
+            <div class="name">Portfolio</div>
+            <div class="side-menu">
+                 <input type="checkbox" id="checkbox">
+                 <label for="checkbox" class="menu-btn"><span class="material-symbols-outlined">menu</span></label>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contacts</a></li>
+                 </ul>
+            </div>
+        </div>
+        <div class="upper">
+            <br/>
+            <br/>
+
+            <div class="heading">
+                    <h1>Welcome to my portfolio</h1>
+            </div>
+        
+            <div class="first-box">
+                <div class="bbb">
+                    <p class="paragraph">Full Stack Web Devloper</p>
+                    <p class="second">A passionate developer dedicated, I bring ideas to life through code</p>
+                    <div class="icon">
+                        <i id="first"class="fa-brands fa-github"></i>
+                        <i id="second"class="fa-brands fa-linkedin"style="margin-left:1rem;"></i>
+                        <i id="third"class="fa-brands fa-signal-messenger"style="margin-left:1rem;"></i>
+                    </div>
+                </div>
+
+               <div class="container4">
+                  <div class="card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"alt="image">
+                  </div>
+               </div>
+
+            </div> 
+
+            <div class="container">
+                 <div class="heading">
+                    <h2>My Skills</h2>
+                 </div>
+                 <br/>
+                 <span>Frontend Development</span>
+                 <div class="container2">
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>React</p>
+                </div>
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>TypeScript</p>
+                </div>
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>Tailwind CSS</p>
+                </div>
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>JavaScript</p>
+                </div>
+             </div>
+             <br/>
+             <br/>
+             <br/>
+             <span1>Backend Development</span1>
+             <div class="container2">
+                <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>Node.js</p>
+                </div>
+                 <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>Express</p>
+                </div>
+                 <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>MongoDB</p>
+                </div>
+                 <div class="card2">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=200&q=80"alt="image">
+                    <p>SQL</p>
+                </div>
+             </div>
+            </div>
+            <h2>Get In Touch</h2>
+            <br/>
+            <br/>
+             <div class="container3">
+                <div class="form-set">
+                    <form action="/action">
+                        <label>
+                            <div class="abc">
+                                 Name
+                                 <input type="text"class="box"placeholder="Your name">
+                            </div>
+                        </label>
+                        
+                        <label>  
+                            <div class="abc">
+                                Email
+                                 <input type="text"class="box"placeholder="Your@email.com">
+                            </div>
+                        </label>  
+                        
+                        <label>  
+                            <div class="abc">
+                                Message
+                            </br>
+                                  <label for="feedback"></label>
+                                  <textarea id="feedback"name="feedback"placeholder="your message here..."rows="6"cols="80"></textarea>
+                            </div>
+                        </label>
+                        <button class="btn">send message</button>    
+                    </form>
+                </div>
+             </div>
+             <div class="footer">
+                
+                <div class="social-icon">
+                    <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                   </br>
+                    <li><a href="#">Skills</a></li>
+                    </br>
+                    <li><a href="#">Contacts</a></li>
+                    </br>
+                 </ul>
+                </div>
+                
+                 <div class="social-icon">
+                    <h3>Connect</h3>
+                    <i id="first"class="fa-brands fa-github"></i>
+                    <i id="second"class="fa-brands fa-linkedin"style="margin-left:1rem;"></i>
+                    <i id="third"class="fa-brands fa-signal-messenger"style="margin-left:1rem;"></i>  
+                </div>
+
+                 <div class="social-icon">
+                    <h3>contacts Info</h3>
+                    <p1>Email:piyushgupta80029@gmail.com</p1>
+                    </br>
+                    <p1>Location:india</p1>
+                </div>
+
+                <div class="card4">
+                <h4>© 2024 Portfolio. All rights reserved.</h4>
+               </div>
+
+             </div>
+
+
+        </div>
+    </body>
+</html>
